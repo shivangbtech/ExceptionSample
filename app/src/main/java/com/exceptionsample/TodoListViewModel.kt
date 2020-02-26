@@ -13,7 +13,7 @@ class TodoListViewModel : ViewModel() {
 
     val todoItems: ObservableList<String> = ObservableArrayList()
     val todoItemBinding: ItemBinding<String> = ItemBinding.of(BR.item, R.layout.list_item_todo)
-
+    val adapter = MyRecyclerViewAdapter<String>()
 
     init {
         for (i in 1..10) {

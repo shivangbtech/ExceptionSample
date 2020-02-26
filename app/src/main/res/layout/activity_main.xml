@@ -18,6 +18,7 @@
             android:layout_height="match_parent"
             app:itemBinding="@{viewmodel.todoItemBinding}"
             app:items="@{viewmodel.todoItems}"
+            app:adapter="@{viewmodel.adapter}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
